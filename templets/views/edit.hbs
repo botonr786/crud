@@ -1,0 +1,22 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>navbar}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <center><h1>Product</h1></center>
+            <form action="/edit" method="POST">
+            <input type="hidden" name="id" value="{{productmodel._id}}">
+                <input type="text" placeholder="Enter The Product Name" class="form-control" name="product" value="{{productmodel.product}}"><br>
+                <input type="text" placeholder="Enter The Product details" class="form-control" name="details" value="{{productmodel.details}}"><br>
+                <input type="text" placeholder="Enter The Price" class="form-control" name="price" value="{{productmodel.price}}"><br>
+                <input type="email" placeholder="Enter The gmail id" class="form-control" name="gmail" value="{{productmodel.gmail}}"><br>
+                <input type="number" placeholder="Enter The phone number" class="form-control" name="number" value="{{productmodel.number}}"><br>
+                <input type="submit" class="btn btn-outline-primary">
+            </form>
+        </div>
+    </div>
+</div>

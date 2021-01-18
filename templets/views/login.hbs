@@ -1,0 +1,20 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+           {{>navbar}}
+        </div>
+    </div><br><br>
+    <div class="row">
+        <div class="col-md-5 offset-3 py-3" style="background-color: thistle;">
+          <hr>  <center><h1 style="background-color: teal;">Admin Login</h1></center><br><br>
+            <form action="/login" method="POST">
+              <input type="text" placeholder="Enter The User Id and gmail id" name="gmail" class="form-control"><br>
+              <input type="password" placeholder="Enter The Password" name="password" class="form-control"><br>
+              <input type="submit" class="btn btn-lg btn-outline-danger btn-block" value="Login"><hr>
+             <a href=""> <p>Forgotten password?</p></a><hr>
+            </form>
+            <a href="register"><input type="submit" class="btn btn-lg btn-outline-primary btn-block" value="Create a New Account"></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>navbar}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <center><h1>Product</h1></center>
+            <form action="/product" method="POST">
+                <input type="text" placeholder="Enter The Product Name" class="form-control" name="product"><br>
+                <input type="text" placeholder="Enter The Product details" class="form-control" name="details"><br>
+                <input type="text" placeholder="Enter The Price" class="form-control" name="price"><br>
+                <input type="email" placeholder="Enter The gmail id" class="form-control" name="gmail"><br>
+                <input type="number" placeholder="Enter The phone number" class="form-control" name="number"><br>
+                <input type="submit" class="btn btn-outline-primary">
+            </form>
+           <a href="display"><h1><i class="fa fa-eye" aria-hidden="true"></i>display</h1></a>
+        </div>
+    </div>
+</div>
